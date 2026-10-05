@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <style>body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 60px 400px 60px;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #f60ed7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f587ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    padding: 30px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #f18ff0;
+    padding: 30px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #d307cc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}</style>
+
+    <div class="dashboard">
+
+        <header>Header</header>
+
+        <nav>Navigation</nav>
+
+        <main>
+            <h2>Main Content</h2>
+            <p>Welcome to the dashboard.</p>
+        </main>
+
+        <aside>
+            <h3>Aside</h3>
+            <p>Sidebar content</p>
+        </aside>
+
+        <footer>Footer</footer>
+
+    </div>
+
+</body>
+</html>
